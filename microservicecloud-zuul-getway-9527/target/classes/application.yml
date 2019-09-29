@@ -6,6 +6,8 @@ spring:
     name: microservicecloud-zuul-gateway
 
 zuul:
+  ignored-services: microservicecloud-dept
+  prefix: zlt
   routes:
     mydept.serviceId: microservicecloud-dept
     mydept.path: /mydept/**
